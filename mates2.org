@@ -1,0 +1,828 @@
+#+TITLE: Curso de matemáticas de 2º de Bachillerato
+#+DESCRIPTION: Aprendizaje, ejemplos y ejercicios del libro de Anaya
+#+AUTHOR: Marcel Gisbert
+#+STARTUP: showall entitiespretty
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+#+LANGUAGE: es
+#+OPTIONS: date:nil \n:t toc:t
+* Resolución de problemas
+** Análisis de algunas estrategias
+*** Tantea, analiza sistemáticamente todos los casos
+**** Problema resuelto
+/El primer dígito de un número de seis cifras es 1. Si se mueve al otro extremo, a la derecha, manteniendo el orden del resto de cifras, el nuevo número (también de seis cifras) es tres veces el primero./
+/¿Cuál es el número original?/
+
+A es el número original _1_ _a_ _b_ _c_ _d_ _e_ y B es el nuevo número _a_ _b_ _c_ _d_ _e_ _1_
+Tabla de múltiplos de 3:
+| Última cifra de A      | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| Última cifra de B = 3A | 0 | 3 | 6 | 9 | 2 | 5 | 8 | 1 | 4 | 7 |
+Si la última cifra de B es un 1, la última cifra de A sólo puede ser un 7.
+La última cifra de A es _e_, por tanto la cifra _e_ de B es 7 porque 3 · 7 = 21
+A: _1_ _a_ _b_ _c_ _d_ _7_
+B: _a_ _b_ _c_ _d_ _7_ _1_
+Si la penúltima cifra de B es un 7 y como nos llevamos 2 de la operación anterior, se lo restamos y localizamos el correspondiente al 5 en la tabla de equivalencias.
+3 · 5 + 2 = 17
+La penúltima cifra de A es _d_, por tanto la cifra _d_ de B es 5.
+A: _1_ _a_ _b_ _c_ _5_ _7_
+B: _a_ _b_ _c_ _5_ _7_ _1_
+Continuando el razonamiento, _c_ sería: 3 · 8 + 1(llevada) = 25
+_c_ es 8 y me llevo 2
+A: _1_ _a_ _b_ _8_ _5_ _7_
+B: _a_ _b_ _8_ _5_ _7_ _1_
+El siguiente sería: 3 · 2 + 2 = 8
+_b_ es 2 y no me llevo
+A: _1_ _a_ _2_ _8_ _5_ _7_
+B: _a_ _2_ _8_ _5_ _7_ _1_
+Por último, 3 · 4 = 12
+_a_ es 4
+A: _1_ _4_ _2_ _8_ _5_ _7_
+B: _4_ _2_ _8_ _5_ _7_ _1_
+**** Aplica la estrategia y resuelve
+/1. El matemático Hardy visitó en el hospital al matemático indio Ramanujan. Le comentó: "He venido en el taxi 1 729, un número muy soso". "De ninguna manera" - contestó Ramanujan -, "es un número muy interesante: es el menor que se puede expresar como suma de dos cubos de dos maneras diferentes". Demuéstralo./
+x^3 + y^3 = 1.729
+
+/2. El producto de cuatro enteros consecutivos es 7 590 024. ¿Qué números son?/
+
+/3. Halla el mayor número entero =n= que cumpla esta desigualdad: n^200 < 5^300./
+
+/4. ¿Cuántos números de cuatro cifras terminados en 45 son múltiplos de 45? ¿Hay alguno que empiece por 45? Explica tu respuesta./
+
+/5. ¿Cuál es la suma de todos los números capicúas comprendidos entre 60 000 y 70 000?/
+
+/6. ¿Cuántos números menores que 1 000 tienen la suma de sus dígitos igual a 7?/
+
+/7. ¿Cuál es el último dígito (cifra de unidades) de 3 857^105?/
+
+*** Hacer un esquema, dibujo o diagrama
+**** Problema resuelto
+/Un grupo de soldados marcha marcando el paso y formando una hilera de 30m de largo. El sargento, que se encontraba a la altura del ultimo, aligera el paso hasta alcanzar la cabecera de la fila y, en ese momento, se vuelve y retrocede sin variar su ritmo hasta situarse otra vez junto al último./
+/¿Cuál ha sido la distancia recorrida por el sargento en ese espacio de tiempo, sabiendo que mientras tanto el pelotón ha progresado 20m?/
+
+** El proceso deductivo
+** Método de reducción al absurdo
+** El método de inducción compleja
+** Principio del palomar
+** Problemas para practicar
+* I. Álgebra
+** 1. Álgebra de matrices
+En un país /A/ hay tres aeropuertos internacionales, A_1, A_2, A_3, mientras que en otro país /B/ hay cuatro, B_1, B_2, B_3, B_4.
+Una persona que quiera ir el lunes de /A/ a /B/ dispone de los siguientes vuelos:
+#+BEGIN_EXPORT latex
+\setlength{\unitlength}{1cm}
+\thicklines
+\begin{picture}(20,5)
+%comment óvalo izquierdo
+\put(5,0.2){\oval(2,4)}
+\put(4.8,2.5){$A$}
+\put(4.8,1.5){$A_1$}
+\put(4.8,0){$A_2$}
+\put(4.8,-1.4){$A_3$}
+%comment óvalo derecho
+\put(9,0.2){\oval(2,4)}
+\put(8.8,2.5){$B$}
+\put(8.8,1.6){$B_1$}
+\put(8.8,0.6){$B_2$}
+\put(8.8,-0.4){$B_3$}
+\put(8.8,-1.4){$B_4$}
+%comment líneas
+\put(5.3,1.5){\line(4,1){3}}
+\put(5.3,0){\line(4,1){3}}
+\put(5.3,-1.4){\line(4,1){3}}
+\end{picture}
+#+END_EXPORT
+La información anterior puede ser representada mediante esta tabla:
+|    | B_1 | B_2 | B_3 | B_4 |
+| A_1 |  1 |  0 |  2 |  0 |
+| A_2 |  0 |  1 |  1 |  1 |
+| A_3 |  0 |  0 |  0 | 1  |
+
+Aquí tienes ahora, representados mediante flechas, los vuelos que permiten viajar el martes desde el país /B/ anterior hasta otro país /C/:
+#+BEGIN_EXPORT latex
+
+#+END_EXPORT
+Representa, mediante una tabla similar a la anteriormente descrita, la información recogida en el diagrama de vuelos entre los países /B/ y /C/.
+|    | C_1 | C_2 |
+| B_1 |  3 |  2 |
+| B_2 |  1 |  0 |
+| B_3 |  1 |  0 |
+| B_4 |  0 |  2 |
+
+*** 1.1 Nomenclaruta. Definiciones
+Las siguientes tablas numéricas son matrices:
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 &    7     & -2 & 4 \\
+ 3 &   0.5    &  0 & 1 \\
+-1 & \sqrt{2} & 4  & -5
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 1 &    4     & 0 & \frac{2}{7} & 3
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 5 \\
+ 3 \\
+-4 \\
+ 0
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 3 &  -1  & -4 \\
+ 5 &  10  &  6 \\
+ 4 &  -1  &  5
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+A=
+\begin{pmatrix}
+ a_{11}  & a_{12}  & a_{13} & ... & a_{1n} \\
+ a_{21}  & a_{22}  & a_{23} & ... & a_{2n} \\
+ a_{31}  & a_{32}  & a_{33} & ... & a_{3n} \\
+ ... & ... & ... & ... & ... \\
+ a_{m1}  & a_{m2}  & a_{m3} & ... & a_{mn}
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+**** Ejercicios propuestos
+-1. Escribe las matrices traspuestas de\\
+#+BEGIN_EXPORT latex
+\begin{equation}
+A=
+\begin{pmatrix}
+ 3 & 1 \\
+ 2 & 5 \\
+ 7 & 6
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+A^t=
+\begin{pmatrix}
+ 3 & 2 & 7 \\
+ 1 & 5 & 6
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+B=
+\begin{pmatrix}
+ 2 & 5 & 7 \\
+ 4 & 1 & 0
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+B^t=
+\begin{pmatrix}
+ 2 & 4 \\
+ 5 & 1 \\
+ 7 & 0
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+C=
+\begin{pmatrix}
+ 1 & 3 & 5 & -1 \\
+ 0 & 2 & 4 & 1  \\
+ 6 & 1 & 0 & 3
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+C^t=
+\begin{pmatrix}
+ 1 & 0 & 6 \\
+ 3 & 2 & 1 \\
+ 5 & 4 & 0 \\
+-1 & 1 & 3
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+D=
+\begin{pmatrix}
+ 7 & 4 & 1 \\
+ 2 & 1 & 0 \\
+ 0 & 1 & 7 \\
+ 6 & 3 & 2
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+D^t=
+\begin{pmatrix}
+ 7 & 2 & 0 & 6 \\
+ 4 & 1 & 1 & 3 \\
+ 1 & 0 & 7 & 2
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+E=
+\begin{pmatrix}
+ 1 & 7  & 4 \\
+ 7 & -1 & 0 \\
+ 4 & 0  & 3
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+E^t=
+\begin{pmatrix}
+ 1 & 7  & 4 \\
+ 7 & -1 & 0 \\
+ 4 & 0  & 3
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+F=
+\begin{pmatrix}
+ 5 & 4 & 6 & 1
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+F^t=
+\begin{pmatrix}
+ 5 \\
+ 4 \\
+ 6 \\
+ 1
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+-2. Escribe una matriz /X/ tal que /X^t/ = /X/; esto es, que sea simétrica.\\
+*E*
+
+-3. Escribe una matriz que describa lo siguiente:\\
+ 6 x 5 
+#+BEGIN_EXPORT latex
+\begin{equation}
+(a_{65})\\
+\begin{pmatrix}
+ 2 & 1 & 0 & 0 & 0 \\
+ 0 & 1 & 0 & 2 & 0 \\
+ 0 & 0 & 1 & 1 & 0 \\
+ 0 & 0 & 0 & 0 & 0 \\
+ 0 & 0 & 0 & 1 & 2 \\
+ 0 & 0 & 0 & 1 & 0
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+*** 1.2 Operaciones con matrices
+Suma de matrices: (a_ij)_m,n + (b_ij)_m,n = (a_ij + b_ij)_m,n \\
+Producto de matrices: k · (a_ij)_m,n = (ka_ij)_m,n \\
+
+Ejercicios propuestos
+ 1. Dadas las siguientes matrices:
+#+BEGIN_EXPORT latex
+\begin{equation}
+A=
+\begin{pmatrix}
+ 1 & 0 & -2 \\
+ 4 & 1 & -3
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+B=
+\begin{pmatrix}
+ -1 & 0 & 1 \\
+ -4 & 1 & 3
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+C=
+\begin{pmatrix}
+ 7 &  1  & -1 \\
+ 8 & -10 & 0
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+D=
+\begin{pmatrix}
+ -3 & 1 & 5 \\
+  6 & 2 & 4
+\end{pmatrix}
+\end{equation}
+
+#+END_EXPORT
+calcula /E = 2A - 3B + C - 2D/
+
+#+BEGIN_EXPORT latex
+\begin{equation}
+2A=
+\begin{pmatrix}
+ 2 & 0 & -4 \\
+ 8 & 2 & -6
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+3B=
+\begin{pmatrix}
+ -3  & 0 & 3 \\
+ -12 & 3 & 9
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+C=
+\begin{pmatrix}
+ 7 &  1  & -1 \\
+ 8 & -10 & 0
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+2D=
+\begin{pmatrix}
+ -6 & 2 & 10 \\
+ 12 & 4 & 8
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+E=
+\begin{pmatrix}
+ 18 & -1 & -18 \\
+ 16 & -15 & -23
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+Producto de una matriz fila por una matriz columna
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ a_1 & a_2 & a_3 & ... & a_n
+\end{pmatrix}
+·
+\begin{pmatrix}
+ b_1 \\
+ b_2 \\
+ b_3 \\
+ ... \\
+ b_n
+\end{pmatrix}
+= a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 + ... + a_n \cdot b_n
+\end{equation}
+#+END_EXPORT
+
+Producto de matrices: A_m,n · B_n,p = C_m,p
+#+BEGIN_EXPORT latex
+\begin{equation}
+c_{ij} = 
+\begin{pmatrix}
+a_{i1} & a_{i2} & ... & a_{in}
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+b_{1j} \\
+b_{2j} \\
+...   \\
+b_{nj}
+\end{pmatrix}
+= a_{i1} \cdot b_{1j} + a_{i2} \cdot b_{2j} + ... + a_{in} \cdot b_{nj} = \displaystyle\sum_{k=1}^{n} a_{ik} \cdot b_{kj}
+\end{equation}
+#+END_EXPORT
+
+Ejercicios propuestos
+-2. Efectúa todos los posibles productos entre las siguientes matrices:
+#+BEGIN_EXPORT latex
+\begin{equation}
+A = 
+\begin{pmatrix}
+ 1 & 2 & 3 \\
+-2 & 5 & 1
+\end{pmatrix}
+B =
+\begin{pmatrix}
+ 7 & 0 \\
+-1 & 1 \\
+ 0 & 1 \\
+ 3 & 4
+\end{pmatrix}
+C =
+\begin{pmatrix}
+ 2 &  7 & 1 & 5 \\
+ 6 &  3 & 0 & 0 \\
+-2 & -5 & 1 & 0
+\end{pmatrix}
+D =
+\begin{pmatrix}
+ 1 & -1 &  1 \\
+ 0 &  5 &  2 \\
+ 2 &  3 & -3
+\end{pmatrix}
+\end{equation}
+A · B no se puede multiplicar
+
+\begin{equation}
+B · A =
+\begin{pmatrix}
+ 7 \cdot 1 + 0 \cdot -2 &  7 \cdot 2 + 0 \cdot 5 &  7 \cdot 3 + 0 \cdot 1 \\
+-1 \cdot 1 + 1 \cdot -2 & -1 \cdot 2 + 1 \cdot 5 & -1 \cdot 3 + 1 \cdot 1 \\
+ 0 \cdot 1 + 1 \cdot -2 &  0 \cdot 2 + 1 \cdot 5 &  0 \cdot 3 + 1 \cdot 1 \\
+ 3 \cdot 1 + 4 \cdot -2 &  3 \cdot 2 + 4 \cdot 5 &  3 \cdot 3 + 4 \cdot 1
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ 7 & 14 & 21 \\
+-3 &  3 & -2 \\
+-2 &  5 &  1 \\
+-5 & 26 & 13
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+A \cdot C =
+\begin{pmatrix}
+ 1 \cdot 2 + 2 \cdot 6 + 3 \cdot -2 &  1 \cdot 7 + 2 \cdot 3 + 3 \cdot -5 &  1 \cdot 1 + 2 \cdot 0 + 3 \cdot 1 &  1 \cdot 5 + 2 \cdot 0 + 3 \cdot 0 \\
+-2 \cdot 2 + 5 \cdot 6 + 1 \cdot -2 & -2 \cdot 7 + 5 \cdot 3 + 1 \cdot -5 & -2 \cdot 1 + 5 \cdot 0 + 1 \cdot 1 & -2 \cdot 5 + 5 \cdot 0 + 1 \cdot 0
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ 8 & -2 &  4 &   5 \\
+24 & -4 & -1 & -10
+\end{pmatrix}
+\end{equation}
+
+C · A  no se puede multiplicar
+
+\begin{equation}
+A \cdot D =
+\begin{pmatrix}
+ 1 \cdot 1 + 2 \cdot 0 + 3 \cdot 2 &  1 \cdot -1 + 2 \cdot 5 + 3 \cdot 3 &  1 \cdot 1 + 2 \cdot 2 + 3 \cdot -3 \\
+-2 \cdot 1 + 5 \cdot 0 + 1 \cdot 2 & -2 \cdot -1 + 5 \cdot 5 + 1 \cdot 3 & -2 \cdot 1 + 5 \cdot 2 + 1 \cdot -3
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ 7 & 18 & -4 \\
+ 0 & 30 &  5
+\end{pmatrix}
+\end{equation}
+
+D · A  no se puede multiplicar
+
+B · C  no se puede multiplicar
+
+\begin{equation}
+C \cdot B =
+\begin{pmatrix}
+ 2 \cdot 7 +  7 \cdot -1 + 1 \cdot 0 + 5 \cdot 3 &  2 \cdot 0 +  7 \cdot 1 + 1 \cdot 1 + 5 \cdot 4 \\
+ 6 \cdot 7 +  3 \cdot -1 + 0 \cdot 0 + 0 \cdot 3 &  6 \cdot 0 +  3 \cdot 1 + 0 \cdot 1 + 0 \cdot 4 \\
+-2 \cdot 7 + -5 \cdot -1 + 1 \cdot 0 + 0 \cdot 3 & -2 \cdot 0 + -5 \cdot 1 + 1 \cdot 1 + 0 \cdot 4
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ 22 & 28 \\
+ 39 &  3 \\
+ -9 &  6
+\end{pmatrix}
+\end{equation}
+
+B · D no se puede multiplicar
+
+D · B no se puede multiplicar
+
+C · D no se puede multiplicar
+
+\begin{equation}
+D \cdot C =
+\begin{pmatrix}
+ 1 \cdot 2 + -1 \cdot 6 +  1 \cdot -2 & 1 \cdot 7 + -1 \cdot 3 +  1 \cdot -5 & 1 \cdot 1 + -1 \cdot 0 +  1 \cdot 1 \\
+ 0 \cdot 2 +  5 \cdot 6 +  2 \cdot -2 & 0 \cdot 7 +  5 \cdot 3 +  2 \cdot -5 & 0 \cdot 1 +  5 \cdot 0 +  2 \cdot 1 \\
+ 2 \cdot 2 +  3 \cdot 6 + -3 \cdot -2 & 2 \cdot 7 +  3 \cdot 3 + -3 \cdot -5 & 2 \cdot 1 +  3 \cdot 0 + -3 \cdot 1
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ -6 & -1 &  2 \\
+ 26 &  5 &  2 \\
+ 28 & 38 & -1
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+-3. Intenta conseguir una matriz /I_3/ de dimensión 3 x 3 que, multiplicada por cualquier matriz cuadrada /A(3 x 3)/, la deje igual.
+Es decir: /A · I_3 = I_3 · A = A/
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 & -1 &  1 \\
+ 0 &  5 &  2 \\
+ 2 &  3 & -3
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 1 & 0 & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 1 & 0 & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 1 & -1 &  1 \\
+ 0 &  5 &  2 \\
+ 2 &  3 & -3
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 1 & -1 &  1 \\
+ 0 &  5 &  2 \\
+ 2 &  3 & -3
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+*** 1.3 Propiedades de las operaciones con matrices
+**** Propiedades de la suma de matrices
+1. Asociativa: (A + B) + C = A + (B + C)
+2. Conmutativa: A + B = B + A
+3. Elemento neutro: A + 0 = 0 + A = A
+4. Toda matriz A, tiene una opuesta -A
+**** Propiedades del producto de números por matrices
+1. Asociativa: a · (b · A) = (a · b) · A
+2. Distributiva I: (a + b) · A = a · A + b · A
+3. Distributiva II: a · (A · B) = a · A + a · B
+4. Producto por el número I: I · A = A
+
+Ejercicios propuestos
+-1 Comprueba las propiedades 2 y 3 del producto de números por matrices, tomando:
+#+BEGIN_EXPORT latex
+\begin{equation}
+a = 3, \quad b = 6 \quad A = 
+\begin{pmatrix}
+ 3 &  5 & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
+\quad B = 
+\begin{pmatrix}
+ 7 & -2 & 1 \\
+ 4 &  6 & 8
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+2)Distributiva I: (a + b) \cdot A = a \cdot A + b \cdot A
+#+BEGIN_EXPORT latex
+\begin{equation}
+(3 + 6) \cdot 
+\begin{pmatrix}
+ 3 &  5 & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
+ = 3 \cdot 
+\begin{pmatrix}
+ 3 &  5 & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
+ + 6 \cdot 
+\begin{pmatrix}
+ 3 &  5 & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
+\end{equation}
+
+Resultado 1
+\begin{equation}
+ 9 \cdot 
+\begin{pmatrix}
+ 3 &  5 & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ 27 &  45 & -9 \\
+ 18 & -27 &  0
+\end{pmatrix}
+\end{equation}
+
+Resultado 2
+\begin{equation}
+ 3 \cdot 
+\begin{pmatrix}
+ 3 &  5 & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
++ 6 \cdot
+\begin{pmatrix}
+ 3 &  5 & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 9 & 15 & -3 \\
+ 6 & -9 &  0
+\end{pmatrix}
++
+\begin{pmatrix}
+ 18 &  30 & -6 \\
+ 12 & -18 &  0
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 27 &  45 & -9 \\
+ 18 & -27 &  0
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+3) Distributiva II: a · (A + B) = a · A + a · B
+#+BEGIN_EXPORT latex
+\begin{equation}
+3 \cdot 
+\left[
+\begin{pmatrix}
+ 3 & 5  & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
++
+\begin{pmatrix}
+ 7 & -2 & 1 \\
+ 4 &  6 & 8
+\end{pmatrix}
+\right]
+ = 3 \cdot 
+\begin{pmatrix}
+ 3 & 5  & -1 \\
+ 2 & -3 &  0
+\end{pmatrix}
+ + 3 \cdot 
+\begin{pmatrix}
+ 7 & -2 & 1 \\
+ 4 &  6 & 8
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+3 \cdot 
+\begin{pmatrix}
+ 10 & 3 & 0 \\
+  6 & 3 & 8
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ 30 & 9 &  0 \\
+ 18 & 9 & 24
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 9 & 15 & -3 \\
+ 6 & -9 &  0
+\end{pmatrix}
+ + 
+\begin{pmatrix}
+ 21 & -6 &  3 \\
+ 12 & 18 & 24
+\end{pmatrix}
+ = 
+\begin{pmatrix}
+ 30 & 9 &  0 \\
+ 18 & 9 & 24
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
+**** Propiedades del producto de matrices
+-1. Asociativa: (A_m,n · B_n,p) · C_p,q = A_m,n · (B_n,p · C_p,q)
+-2. El producto de matrices *no es conmutativo*
+
+*** 1.4 Matrices cuadradas
+*** 1.5 Complementos teóricos para el estudio de matrices
+*** 1.6 Rango de una matriz
+*** Eercicios y problemas
+** 2. Determinantes
+*** 2.1 Determinantes de orden dos
+*** 2.2 Determinantes de orden tres
+*** 2.3 Determinantes de orden cualquiera
+*** 2.4 Menor complementario y adjunto
+*** 2.5 Desarrollo de un determinante por los elementos de una línea
+*** 2.6 Método para calcular determinantes de orden cualquiera
+*** 2.7 El rango de una matriz a partir de sus menores
+*** 2.8 Otro método para obtener la inversa de una matriz
+** 3. Sistemas de ecuaciones
+*** 3.1 Sistemas de ecuaciones lineales
+*** 3.2 Posibles soluciones de un sistema de ecuaciones lineales
+*** 3.3. Sistemas escalonados
+*** 3.4 Método de Gauss
+*** 3.5 Discusión de sistemas de ecuaciones
+*** 3.6 Un nuevo criterio para saber si un sistema es compatible
+*** 3.7 Regla de Cramer
+*** 3.8 Aplicación de la regla de Cramer a sistemas cualesquiera
+*** 3.9 Sistemas homogéneos
+*** 3.10 Discusión de sistemas mediante determinantes
+*** 3.11 Forma matricial de un sistema de ecuaciones
+*** Ejercicios y problemas
+* II. Geometría
+** 4. Vectores en el espacio 
+*** 4.1 Operaciones con vectores
+*** 4.2 Expresión analítica de un vector
+*** 4.3 Producto escalar de vectores
+*** 4.4 Producto vectorial
+*** 4.5 Producto mixto de tres vectores
+*** Ejercicios y problemas
+** 5. Puntos, rectas y planos en el espacio
+*** 5.1 Sistema de referencia en el espacio
+*** 5.2 Aplicaciones de los vectores a problemas geométricos
+*** 5.3 Ecuaciones de la recta
+*** 5.4 Posiciones relativas de dos rectas
+*** 5.5 Ecuaciones del plano
+*** 5.6 Posiciones relativas de planos y rectas
+*** 5,7 El lenguaje de las ecuaciones: variables, parámetros. etc.
+*** Ejercicios y problemas
+** 6. Problemas métricos
+*** 6.1 Direcciones de rectas y planos
+*** 6.2 Medida de ángulos entre rectas y planos
+*** 6.3 Distancias entre puntos, rectas y planos
+*** 6.4 Medidas de áreas y volúmenes
+*** 6.5 Lugares geométricos en el espacio
+*** Ejercicios y problemas
+* III. Análisis
+** 7. Límites de funciones. Continuidad
+*** 7.1 Idea gráfica de los límites de funciones
+*** 7.2 Un poco de teoría: aprendamos a definir los límites
+*** 7.3 Sencillas operacioines con límites
+*** 7.4 Indeterminaciones
+*** 7.5 Comparación de infinitos. Aplicación a los límites cuando x \rightarrow \pm \infty
+*** 7.6 Cálculo de límites cuando x \rightarrow + \infty
+*** 7.7 Cálculo de límites cuando x \rightarrow - \infty
+*** 7.8 Límite de una función en un punto. Continuidad
+*** 7.9 Cálculo de límites cuando x \rightarrow c
+*** 7.10 Una potente herramienta para el cálculo de límites
+*** 7.11 Continuidad en un intervalo
+*** Ejercicios y problemas
+** 8. Derivadas
+*** 8.1 Derivada de una función en un punto
+*** 8.2 Función derivada
+*** 8.3 Reglas de derivación
+*** 8.4 Derivada de una función conociendo la de su inversa
+*** 8.5 Derivada de una función implícita
+*** 8.6 Derivacion logarítmica
+*** 8.7 Obtención razonada de las fórmulas de derivación
+*** 8.8 Diferencial de una función
+*** 8.9 Ejercicios y problemas
+** 9. Aplicaciones de las derivadas
+*** 9.1 Recta tangente a una curva
+*** 9.2 Crecimiento y decrecimiento de una función en un punto
+*** 9.3 Máximos y mínimos relativos de una función
+*** 9.4 Información extraída de la segunda derivada
+*** 9.5 Optimización de funciones
+*** 9.6 Dos importantes teoremas
+*** 9.7 Aplicaciones teóricas del teorema del valor medio
+*** 9.8 Teorema de Cauchy y regla de L'Hôpital
+*** Ejercicios y problemas
+** 10. Representación de funciones
+*** 10.1 Elementos fundamentales para la construcción de curvas
+*** 10.2 El alor absoluto en la representación de funciones
+*** 10.3 Representación de funciones polinómicas
+*** 10.4 Representación de funciones racionales
+*** 10.5 Representación de otros tipos de funciones
+*** Ejercicios y problemas
+** 11. Cálculo de primitivas
+*** 11.1 Primitivas. Reglas básicas para su cálculo
+*** 11.2 Expresión compuesta de integrales inmediatas
+*** 11.3 Integración "por partes"
+*** 11.4 Integración de funciones racionales
+*** Ejercicios y problemas
+** 12. La integral definida
+*** 12.1 Área bajo una curva
+*** 12.2 Una condición para que una función sea integrable en [a,b]
+*** 12.3 Propiedades de la integral
+*** 12.4 La integral y su relación con la derivada
+*** 12.5 Regla de Barrow
+*** 12.6 Cálculo de áreas mediante integrales
+*** 12.7 Volumen de un cuerpo de revolución
+*** Ejercicios y problemas
+* IV. Probabilidad
+** 13. Azar y probabilidad
+*** 13.1 Experiencias alcatorias. Sucesos
+*** 13.2 Frecuencia y probabilidad
+*** 13.3 Ley de Laplace
+*** 13.4 Probabilidad condicionada. Sucesos independientes
+*** 13.5 Pruebas compuestas
+*** 13.6 Probabilidad total
+*** 13.7 Probabilidades "a posteriori". Fórmula de Bayes
+*** Ejercicios y problemas
+** 14. Distribuciones de probabilidad
+*** 14.1 Distribuciones estadísticas
+*** 14.2 Distribuciones de probabilidad de variable discreta
+*** 14.3 La distribución binomial
+*** 14.4 Distribucioines de probabilidad de variable continua
+*** 14.5 La distribución normal
+*** 14.6 La distribución binomial se aproxima a la normal
+*** Ejercicios y problemas
+*** Solucionies a las autoevaluaciones
+
