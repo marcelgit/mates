@@ -699,6 +699,43 @@ Resultado 2
 **** Propiedades del producto de matrices
 -1. Asociativa: (A_m,n · B_n,p) · C_p,q = A_m,n · (B_n,p · C_p,q)
 -2. El producto de matrices *no es conmutativo*
+-3. Propiedades distributivas. Si se permiten las operaciones, entonces A · (B + C) = A · B + A · C y también (B + C) · D = B · D + C · D
+
+Ejercicios propuestos.
+-2. Comprueba las propiedades distributivas para las siguientes matrices:
+#+BEGIN_EXPORT latex
+\begin{equation}
+A = 
+\begin{pmatrix}
+ 1 & 4 \\
+ 0 & 5 \\
+ 1 & 6
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+B = 
+\begin{pmatrix}
+ -1 & 5 & 6 & 7 \\
+  3 & 0 & 9 & -2
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+C = 
+\begin{pmatrix}
+ 4 & 1 & 6 & 0 \\
+ 0 & -1 & 5 & 5
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+D = 
+\begin{pmatrix}
+ 1 \\
+ 2 \\
+ -5 \\
+ 3
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
 
 *** 1.4 Matrices cuadradas
 *** 1.5 Complementos teóricos para el estudio de matrices
