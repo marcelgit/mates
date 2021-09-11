@@ -594,8 +594,9 @@ a = 3, \quad b = 6 \quad A =
  2 & -3 &  0
 \end{pmatrix}
 \end{equation}
-
+#+END_EXPORT
 Resultado 1
+#+BEGIN_EXPORT latex
 \begin{equation}
  9 \cdot 
 \begin{pmatrix}
@@ -608,8 +609,9 @@ Resultado 1
  18 & -27 &  0
 \end{pmatrix}
 \end{equation}
-
+#+END_EXPORT
 Resultado 2
+#+BEGIN_EXPORT latex
 \begin{equation}
  3 \cdot 
 \begin{pmatrix}
@@ -736,8 +738,228 @@ D =
 \end{pmatrix}
 \end{equation}
 #+END_EXPORT
+Resultado de A · (B + C)
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 & 4 \\
+ 0 & 5 \\
+ 1 & 6
+\end{pmatrix}
+\cdot
+\left[
+\begin{pmatrix}
+ -1 & 5 & 6 & 7 \\
+  3 & 0 & 9 & -2
+\end{pmatrix}
++
+\begin{pmatrix}
+ 4 & 1 & 6 & 0 \\
+ 0 & -1 & 5 & 5
+\end{pmatrix}
+\right]
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 1 & 4 \\
+ 0 & 5 \\
+ 1 & 6
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 3 &  6 & 12 & 7 \\
+ 3 & -1 & 14 & 3
+\end{pmatrix}
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+1\cdot3+4\cdot3 & 1\cdot6+4\cdot(-1) & 1\cdot12+4\cdot14 & 1\cdot7+4\cdot3 \\
+0\cdot3+5\cdot3 & 0\cdot6+5\cdot(-1) & 0\cdot12+5\cdot14 & 0\cdot7+5\cdot3 \\
+1\cdot3+6\cdot3 & 1\cdot6+6\cdot(-1) & 1\cdot12+6\cdot14 & 1\cdot7+6\cdot3 \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 15 &  2 & 68 & 19 \\
+ 15 & -5 & 70 & 15 \\
+ 21 &  0 & 96 & 25
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+Resultado de A · B + A · C
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 & 4 \\
+ 0 & 5 \\
+ 1 & 6
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ -1 & 5 & 6 & 7 \\
+  3 & 0 & 9 & -2
+\end{pmatrix}
++
+\begin{pmatrix}
+ 1 & 4 \\
+ 0 & 5 \\
+ 1 & 6
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 4 & 1 & 6 & 0 \\
+ 0 & -1 & 5 & 5
+\end{pmatrix}
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 1\cdot(-1)+4\cdot3 & 1\cdot5+4\cdot0 & 1\cdot6+4\cdot9 & 1\cdot7+4\cdot(-2) \\
+ 0\cdot(-1)+5\cdot3 & 0\cdot5+5\cdot0 & 0\cdot6+5\cdot9 & 0\cdot7+5\cdot(-2) \\
+ 1\cdot(-1)+6\cdot3 & 1\cdot5+6\cdot0 & 1\cdot6+6\cdot9 & 1\cdot7+6\cdot(-2)
+\end{pmatrix}
++
+\end{equation}
+\begin{equation}
++
+\begin{pmatrix}
+ 1\cdot4+4\cdot0 & 1\cdot1+4\cdot(-1) & 1\cdot6+4\cdot5 & 1\cdot0+4\cdot5 \\
+ 0\cdot4+5\cdot0 & 0\cdot1+5\cdot(-1) & 0\cdot6+5\cdot5 & 0\cdot0+5\cdot5 \\
+ 1\cdot4+6\cdot0 & 1\cdot1+6\cdot(-1) & 1\cdot6+6\cdot5 & 1\cdot0+6\cdot5
+\end{pmatrix}
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 11 & 5 & 42 &  -1 \\
+ 15 & 0 & 45 & -10 \\
+ 17 & 5 & 60 &  -5
+\end{pmatrix}
++
+\begin{pmatrix}
+ 4 & -3 & 26 & 20 \\
+ 0 & -5 & 25 & 25 \\
+ 4 & -5 & 36 & 30
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 15 &  2 & 68 & 19 \\
+ 15 & -5 & 70 & 15 \\
+ 21 &  0 & 96 & 25
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+Resultado de (B + C) · D
+#+BEGIN_EXPORT latex
+\begin{equation}
+\left[
+\begin{pmatrix}
+ -1 & 5 & 6 & 7 \\
+  3 & 0 & 9 & -2
+\end{pmatrix}
++
+\begin{pmatrix}
+ 4 & 1 & 6 & 0 \\
+ 0 & -1 & 5 & 5
+\end{pmatrix}
+\right]
+\cdot
+\begin{pmatrix}
+ 1 \\
+ 2 \\
+ -5 \\
+ 3
+\end{pmatrix}
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 3 &  6 & 12 & 7 \\
+ 3 & -1 & 14 & 3
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 1 \\
+ 2 \\
+ -5 \\
+ 3
+\end{pmatrix}
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 3\cdot1+6\cdot2+12\cdot(-5)+7\cdot3 \\
+ 3\cdot1+(-1)\cdot2+14\cdot(-5)+3\cdot3
+\end{pmatrix}
+=
+\begin{pmatrix}
+ -24 \\
+ -60
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+Resultado de B · D + C · D
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ -1 & 5 & 6 & 7 \\
+  3 & 0 & 9 & -2
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 1 \\
+ 2 \\
+ -5 \\
+ 3
+\end{pmatrix}
++
+\begin{pmatrix}
+ 4 & 1 & 6 & 0 \\
+ 0 & -1 & 5 & 5
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 1 \\
+ 2 \\
+ -5 \\
+ 3
+\end{pmatrix}
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ (-1)\cdot1+5\cdot2+6\cdot(-5)+7\cdot3 \\
+ 3\cdot1+0\cdot2+9\cdot(-5)+(-2)\cdot3
+\end{pmatrix}
++
+\begin{pmatrix}
+ 4\cdot1+1\cdot2+6\cdot(-5)+0\cdot3 \\
+ 0\cdot1+(-1)\cdot2+5\cdot(-5)+5\cdot3
+\end{pmatrix}
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+   0 \\
+ -48
+\end{pmatrix}
++
+\begin{pmatrix}
+ -24 \\
+ -12
+\end{pmatrix}
+=
+\begin{pmatrix}
+ -26 \\
+ -60
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
 
 *** 1.4 Matrices cuadradas
+**** Matriz unidad o Matriz identidad
+**** Matriz inversa de otra
 *** 1.5 Complementos teóricos para el estudio de matrices
 *** 1.6 Rango de una matriz
 *** Eercicios y problemas
