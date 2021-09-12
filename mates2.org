@@ -960,6 +960,122 @@ Resultado de B · D + C · D
 *** 1.4 Matrices cuadradas
 **** Matriz unidad o Matriz identidad
 **** Matriz inversa de otra
+**** Inversa de una matriz por el método de Gauss
+1. Calcula, utilizando el método de Gauss, la inversa de cada una de las siguientes matrices en el supuesto de que la tengan:
+#+BEGIN_EXPORT latex
+\begin{equation}
+a) 
+\begin{pmatrix}
+ 1 & 1 \\
+ 0 & 1
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+b) 
+\begin{pmatrix}
+ 1 & 2 \\
+ 3 & 4
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+c) 
+\begin{pmatrix}
+  1 &  2 \\
+ -2 & -4
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+- Solución a a)
+#+BEGIN_EXPORT latex
+\begin{equation}
+a) 
+\begin{pmatrix}
+ 1 & 1 \\
+ 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+ 1 & 1 & \| & 1 & 0 \\
+ 0 & 1 & \| & 0 & 1
+\end{pmatrix}
+\begin{matrix}
+ 1^{a} - 2^{a} \\
+ 2^{a}
+\end{matrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 1 & 0 & \| & 1 & -1 \\
+ 0 & 1 & \| & 0 & 1
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+- Comprobación de a)
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 & 1 \\
+ 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 1 & -1 \\
+ 0 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 1\cdot1+1\cdot0 & 1\cdot(-1)+1\cdot1 \\
+ 0\cdot1+0\cdot0 & 0\cdot(-1)+1\cdot1
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 1 & 0 \\
+ 0 & 1
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+- Solución a b)
+#+BEGIN_EXPORT latex
+\begin{equation}
+b) 
+\begin{pmatrix}
+ 1 & 2 \\
+ 3 & 4
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 1 & 2 & \| & 1 & 0 \\
+ 3 & 4 & \| & 0 & 1
+\end{pmatrix}
+\bigg |
+\begin{matrix}
+3 \cdot 1^{a} \\
+2^{a}
+\end{matrix}
+\bigg \rangle
+\begin{pmatrix}
+ 3 & 6 & \| & 3 & 0 \\
+ 3 & 4 & \| & 0 & 1
+\end{pmatrix}
+\bigg |
+\begin{matrix}
+1^{a} \\
+2^{a}-1^{a}
+\end{matrix}
+\bigg \rangle
+\end{equation}
+#+END_EXPORT
+- Solución a c)
+#+BEGIN_EXPORT latex
+\begin{equation}
+c) 
+\begin{pmatrix}
+  1 &  2 \\
+ -2 & -4
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+
 *** 1.5 Complementos teóricos para el estudio de matrices
 *** 1.6 Rango de una matriz
 *** Eercicios y problemas
