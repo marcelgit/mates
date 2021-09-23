@@ -699,12 +699,11 @@ Resultado 2
 #+END_EXPORT
 
 **** Propiedades del producto de matrices
--1. Asociativa: (A_m,n · B_n,p) · C_p,q = A_m,n · (B_n,p · C_p,q)
--2. El producto de matrices *no es conmutativo*
--3. Propiedades distributivas. Si se permiten las operaciones, entonces A · (B + C) = A · B + A · C y también (B + C) · D = B · D + C · D
-
-Ejercicios propuestos.
--2. Comprueba las propiedades distributivas para las siguientes matrices:
+***** -1. Asociativa: (A_m,n · B_n,p) · C_p,q = A_m,n · (B_n,p · C_p,q)
+***** -2. El producto de matrices *no es conmutativo*
+***** -3. Propiedades distributivas. Si se permiten las operaciones, entonces A · (B + C) = A · B + A · C y también (B + C) · D = B · D + C · D
+****** Ejercicios propuestos.
+******* -2. Comprueba las propiedades distributivas para las siguientes matrices:
 #+BEGIN_EXPORT latex
 \begin{equation}
 A = 
@@ -961,7 +960,7 @@ Resultado de B · D + C · D
 **** Matriz unidad o Matriz identidad
 **** Matriz inversa de otra
 **** Inversa de una matriz por el método de Gauss
-1. Calcula, utilizando el método de Gauss, la inversa de cada una de las siguientes matrices en el supuesto de que la tengan:
+***** 1. Calcula, utilizando el método de Gauss, la inversa de cada una de las siguientes matrices en el supuesto de que la tengan:
 #+BEGIN_EXPORT latex
 \begin{equation}
 a) 
@@ -1182,7 +1181,7 @@ c)
 \text{No tiene inversa}
 \end{equation}
 #+END_EXPORT
-2. Calcula la inversa de cada una de las siguientes matrices o averigua que no la tiene:
+***** 2. Calcula la inversa de cada una de las siguientes matrices o averigua que no la tiene:
 #+BEGIN_EXPORT latex
 \begin{equation}
 a) 
@@ -1308,6 +1307,275 @@ Comprobación
  1 & 0 & 0 \\
  0 & 1 & 0 \\
  0 & 0 & 1
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+- Solución a c)
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 & 1 & 3 & \big | & 1 & 0 & 0 \\
+ 1 & 2 & 1 & \big | & 0 & 1 & 0 \\
+ 2 & 0 & 0 & \big | & 0 & 0 & 1
+\end{pmatrix}
+\quad
+\bigg |
+\begin{matrix}
+2\cdot1^{a}-2^{a} \\
+2^{a}-1^{a} \\
+3^{a}-2\cdot2^{a}
+\end{matrix}
+\bigg \rangle
+\quad
+\begin{pmatrix}
+ 1 &  0 &  5 & \big | &  2 & 0 &  0 \\
+ 0 &  1 & -2 & \big | &  0 & 1 & -2 \\
+ 0 & -4 & -2 & \big | &  0 & 0 &  0
+\end{pmatrix}
+\end{equation}
+\text{ No tiene inversa }
+#+END_EXPORT
+***** 3. Para las matrices:
+#+BEGIN_EXPORT latex
+\begin{equation}
+A=
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+, \quad B=
+\begin{pmatrix}
+ -1 &  5 \\
+  4 & -1
+\end{pmatrix}
+, \quad A=
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+****** a) A · (B + C) = (A · B) + (A · C)
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\cdot
+\left[
+\begin{pmatrix}
+ -1 &  5 \\
+  4 & -1
+\end{pmatrix}
++
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\right]
+=
+\left[
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ -1 &  5 \\
+  4 & -1
+\end{pmatrix}
+\right]
++
+\left[
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\right]
+=
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 3 & 5 \\
+ 5 & 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+ -1 & 5 \\
+ 26 & 3
+\end{pmatrix}
++
+\begin{pmatrix}
+  4 & 0 \\
+ 15 & 7
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+  3 &  5 \\
+ 41 & 10
+\end{pmatrix}
+=
+\begin{pmatrix}
+  3 &  5 \\
+ 41 & 10
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+****** b) (A + B) · C = (A · C) + (B · C)
+#+BEGIN_EXPORT latex
+\begin{equation}
+\left[
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
++
+\begin{pmatrix}
+ -1 &  5 \\
+  4 & -1
+\end{pmatrix}
+\right]
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+=
+\left[
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\right]
++
+\left[
+\begin{pmatrix}
+ -1 &  5 \\
+  4 & -1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\right]
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 0 & 5 \\
+ 6 & 6
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+  4 & 0 \\
+ 15 & 7
+\end{pmatrix}
++
+\begin{pmatrix}
+  1 &  5 \\
+ 15 & -1
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+  5 & 5 \\
+ 30 & 6
+\end{pmatrix}
+=
+\begin{pmatrix}
+  5 & 5 \\
+ 30 & 6
+\end{pmatrix}
+\end{equation}
+#+END_EXPORT
+****** c) A · (B · C) = (A · B) · C
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\left[
+\begin{pmatrix}
+  -1 &  5 \\
+   4 & -1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\right]
+=
+\left[
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ -1 &  5 \\
+  4 & -1
+\end{pmatrix}
+\right]
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+ 1 & 0 \\
+ 2 & 7
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+  1 &  5 \\
+ 15 & -1
+\end{pmatrix}
+=
+\begin{pmatrix}
+ -1 & 5 \\
+ 26 & 3
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+ 4 & 0 \\
+ 1 & 1
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+  1 & 5 \\
+107 & 3
+\end{pmatrix}
+=
+\begin{pmatrix}
+  1 & 5 \\
+107 & 3
 \end{pmatrix}
 \end{equation}
 #+END_EXPORT
