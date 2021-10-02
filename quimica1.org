@@ -1,0 +1,43 @@
+#+TITLE: Curso de química de 2º de Bachillerato
+#+DESCRIPTION: Aprendizaje, ejemplos y ejercicios del libro de Anaya
+#+AUTHOR: Marcel Gisbert
+#+STARTUP: showall entitiespretty
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+#+LANGUAGE: es
+#+OPTIONS: date:nil \n:t toc:t
+* Naturaleza de la materia
+** Clasificación de la materia
+** Las leyes ponderales
+*** Ejercicios resueltos
+1 Al reaccionar 1,50g de hierro con 1,50g de azufre, queda un exceso de 0,64g de azufre. Si ahora hacemos reaccionar 1,80g de hierro con 0,80g de azufre:
+ a) ¿Quedará alguna sustancia en exceso?
+#+BEGIN_EXPORT latex
+\begin{equation}
+1,50g - 0,64g = 0,86g \text{reaccionan con 1,50g de Fe}
+\end{equation}
+\begin{equation}
+R_1 = \frac{1,50}{0,86} = 1,74 \Rightarrow 1,74 : 1
+\end{equation}
+\begin{equation}
+R_2 = \frac{1,80}{0,80} = 2,25 \Rightarrow 2,25 > 1,74 \Rightarrow \text{exceso de Fe}
+\end{equation}
+\begin{equation}
+0,80 \cdot 1,74 = 1,39 \Rightarrow 1,80 - 1,39 = 0,41g \quad Fe
+\end{equation}
+#+END_EXPORT
+ b) ¿Qué masa de sulfuro de hierro se formará?
+#+BEGIN_EXPORT latex
+\begin{equation}
+0,80g \quad S \quad + 1,39g \quad Fe \quad = 2,19g \quad FeS
+\end{equation}
+#+END_EXPORT
+ c) ¿Cuál es el porcentaje en masa de cada elemento químico en el compuesto?
+#+BEGIN_EXPORT latex
+\begin{equation}
+\frac{FeS 2,19}{Fe 1,39} = \frac{100\%}{x} \Rightarrow x = 63,47\%
+\end{equation}
+\begin{equation}
+\frac{FeS 2,19}{S 0,80} = \frac{100\%}{y} \Rightarrow y = 36,53\%
+\end{equation}
+#+END_EXPORT
