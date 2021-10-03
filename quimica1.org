@@ -41,3 +41,72 @@ R_2 = \frac{1,80}{0,80} = 2,25 \Rightarrow 2,25 > 1,74 \Rightarrow \text{exceso 
 \frac{FeS 2,19}{S 0,80} = \frac{100\%}{y} \Rightarrow y = 36,53\%
 \end{equation}
 #+END_EXPORT
+
+2 El oxígeno y el plomo forman dos óxidos diferentes.
+  El primero de ellos tiene un 7,2% de oxígeno, y el segundo, 13,4%.
+  Comprueba que se cumple la ley de las proporciones múltiples.
+#+BEGIN_EXPORT latex
+\begin{equation}
+\text{Primer óxido} \quad 7,2 \quad \Rightarrow \quad
+\begin{matrix}
+1g \rightarrow 100\% \\
+x  \rightarrow 7,2\%
+\end{matrix}
+\quad \rightarrow \quad \text{0,072g Oxígeno}
+\end{equation}
+\begin{equation}
+1g PbO - 0,072 O = 0,928 Pb
+\qquad R \Rightarrow \quad \frac{0,928}{0,072} \quad \Rightarrow \quad 12,89 : 1
+\end{equation}
+\begin{equation}
+\text{Segundo óxido} \quad 13,4 \quad \Rightarrow \quad
+\begin{matrix}
+1g \rightarrow 100\% \\
+x \rightarrow 13,4\%
+\end{matrix}
+\quad \rightarrow \quad \text{0,134g Oxígeno}
+\end{equation}
+\begin{equation}
+1g PbO - 0,134 O = 0,866 Pb
+\qquad R \Rightarrow \quad \frac{0,866}{0,134} \quad \Rightarrow \quad 6,46 : 1
+\end{equation}
+\begin{equation}
+PM \Rightarrow \frac{12,89}{6,46} = \frac{1}{2} \quad \textbf{Sí cumple}
+\end{equation}
+#+END_EXPORT
+*** Actividades
+2. El oxígeno se combina con el silicio en una relación de masa 1,14:1
+ a) ¿Qué masa de silicio es necesaria para reaccionar con 1g de oxígeno?
+#+BEGIN_EXPORT latex
+\begin{equation}
+\begin{matrix}
+1,14g & \rightarrow & 1g \\
+1g    & \rightarrow & x
+\end{matrix}
+\quad \Rightarrow \quad \text{0,88g Si}
+\end{equation}
+#+END_EXPORT
+
+ b) ¿Qué masa de óxido de silicio se formará?
+#+BEGIN_EXPORT latex
+\begin{equation}
+O \quad 1g + Si \quad 0,88 = 1,88 \quad SiO_2
+\end{equation}
+#+END_EXPORT
+
+3. De acuerdo con los datos del ejercicio resuelto 1, explica qué ocurrirá si hacemos reaccionar:
+ a) 3,0g de Fe con 5,0g de S.
+#+BEGIN_EXPORT latex
+\begin{equation}
+\frac{3,0g \quad Fe}{1,74g \quad S} = 1,72 \quad FeS
+\end{equation}
+\text{3g de Fe reaccionan con 1,72g de S y sobran 3,28g de S} \\
+\text{Se forman 3 + 1,72 = 4,72g de FeS}
+#+END_EXPORT
+
+ b) 4,0mg de Fe con 2,0mg de S.
+2 x 1,74 = 3,14mg Fe reaccionan con 2mg S
+Se forman 5,48mg FeO y sobran 4,0 - 3,48 = 0,52mg Fe
+
+ c) 6,09kg de Fe con 3,5kg de S.
+Reacciona exactamente todo y forma 9,59kg FeS
