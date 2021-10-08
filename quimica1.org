@@ -110,3 +110,56 @@ Se forman 5,48mg FeO y sobran 4,0 - 3,48 = 0,52mg Fe
 
  c) 6,09kg de Fe con 3,5kg de S.
 Reacciona exactamente todo y forma 9,59kg FeS
+
+** Teoría atómica de Dalton
+*** Ejercicios resueltos
+3. Tenemos dos muestras de óxido de cromo, la primera de 12,4g, y la segunda, de 16,9g. Su análisis químico nos indica que en la primera hay 9,5g del metal, y 11,7g en la segunda. ¿Se trata del mismo compuesto?
+12,4 g -  9,5 g = 2,9 g de oxígeno
+16,9 g - 11,7 g = 5,2 g de oxígeno
+Proporción 1º: 2,9/9,5x100 = 30,5%
+Proporción 2º: 5,2/11,7x100 = 44,4%
+No son el mismo compuesto.
+*** Actividades
+4. Justifica, a partir de la teoría de Dalton, por qué la composición porcentual de un compuesto es fija y constante.
+5. ¿Por qué
+6. Cada una de las siguientes proposiciones cuestiona alguna de las hipótesis de Dalton. Indícalas.
+ a) El oxígeno tiene varios isótopos. 2ª
+ b) Lo electrones y los protones son partículas subatómicas. 1ª
+ c) La fórmula molecular de la sacarosa (azúcar) es C_12 H_22 O_11 . 3ª
+
+** Ley de Avogadro
+*** Actividades
+7. Experimentalmente se...
+1 litro de hidrógeno + 1 litro de cloro = 2 litros de HCl -> HCl
+8. Tenemos dos recipientes...
+a) ¿Dónde hay mayor número de moléculas? ¿Por qué?
+Como ocupan el mismo volumen, contienen el mismo número de moléculas
+b) ¿Qué relación existe entre las masas de una molécula de acetileno y una de cloro?
+0,391 / 0,143 = 2,7:1
+9. ¿Por qué unas veces se habla de hipótesis de Avogadro y otras de ley de Avogadro?
+Porque se produce antes o después de la confirmación experimental.
+*** Ejercicios resueltos
+4. Calcula el volumen de vapor de agua que podemos obtener a partir de 80 L de oxígeno. Expresa el resultado en metros cúbicos.
+Agua = H_2 O => Relación de oxígeno en el agua => 1:2
+#+BEGIN_EXPORT latex
+\begin{equation}
+\frac{1 L oxígeno}{2 L agua}=\frac{80 L oxígeno}{volumen} \Rightarrow volumen = 160 L
+\end{equation}
+\begin{equation}
+volumen = 160 L \quad \frac{10^{-3} m^3}{1 L} = 0,16 m^3
+\end{equation}
+#+END_EXPORT
+5. Tenemos dos recipientes en las mismas condiciones de presión y temperatura. El primer contiene 0,95g de butano, y el segundo, de doble volumen, 1,05g de oxígeno.
+a) Compara el número de moléculas que hay en los dos recipientes
+A doble volumen, doble cantidad de moléculas de oxígenos que de butano.
+b) ¿Qué relación hay entre la masa de una molécula de butano y una de oxígeno?
+1,05g de oxígeno en doble volumen significa que 1,05/2 = 0,525g de oxígeno en el mismo volumen
+0,525g oxígeno / 0,95g butano = 0,553 => 1,81:1
+6. Sabemos que 1 L de nitrógeno reacciona con 3 L de hidrógeno para dar 2 L de amoniaco. Determina la fórmula molecular del amoniaco. ¿Se conserva el número de moléculas?
+1·n moléculas N_2 + 3·n moléculas H_2 = 2·n moléculas amoniaco
+Por cada molécula hay:
+2·N y 2·H
+Por tanto:
+1·2·N + 3·2·H = 2·amoniaco
+2N + 6H = 2 amoniaco => 1N+3H = NH_3
+7.
