@@ -162,4 +162,67 @@ Por cada molécula hay:
 Por tanto:
 1·2·N + 3·2·H = 2·amoniaco
 2N + 6H = 2 amoniaco => 1N+3H = NH_3
-7.
+7. En la combinación de 10 L de hidrógeno con 5 L de oxígeno para dar agua en estado gaseoso, se formarán de esta sustancia:
+a) 15 g.  b) 15 L.  c) 10 L.  d) 10 g.
+2 volúmenes de H_2 + 1 volúmen de O_2 = 2 volúmenes de H_2 O
+10 L H_2 + 5 L O_2 = 10 L (H_2 O) => respuesta c)
+** Masa atómica y masa molecular
+Número de Avogadro: 6,022045·10^23
+*** Ejercicios resueltos
+8. El silicio que se encuentra ...
+#+BEGIN_EXPORT latex
+\begin{equation}
+\frac{27,977\cdot92,18 + 28,977\cdot4,71 + 29,974\cdot3,11}{100}=28,086u
+\end{equation}
+#+END_EXPORT
+9. Calcula la masa fórmula del fosfato de calcio. ¿Por qué no hablamos de masa molecular?
+Ca_3 ( PO_4 )_2
+Ca_3 => 3·40,08 = 120,24
+(P)_2 => 2·30,97 = 61,94
+(O_4 )_2 = 2·4·16 = 128
+Total = 310,18u
+¿sustancia iónica?
+*** Actividades
+10. Justifica el valor de la masa atómica del cloro ...
+#+BEGIN_EXPORT latex
+\begin{equation}
+\frac{34,969\cdot75,78 + 36,966\cdot24,22}{100}=35,453u
+\end{equation}
+#+END_EXPORT
+12. Calcula la masa fórmula del sulfato de aluminio y del dicromato de potasio.
+Al_2 (SO_4 )_3
+26,981\cdot2 + 32,064\cdot3 + 15,999\cdot12 = 342,1423u
+K_2 Cr_2 O_7
+39,102·2 + 51,996·2 + 15,999·7 = 294,189u
+13. Un compuesto tiene de masa molecular 60u. Sabiendo que su fórmula empírica es CH_2 O, determina su fórmula molecular.
+C => 12,011
+H => 1,008 => 2·1,008 = 2,016
+O => 15,999
+12,011 + 2,016 + 15,999 = 30,026u
+2·30,026 => 60,052 => C_2 ( H_2 O )_2
+** El mol, masa molar, masa fórmula, relación masa-cantidad de sustancia y volumen molar.
+10. Calcula cuántos átomos y moles de átomos hay en 25,00 g de hierro.
+1 mol de Fe => 55,847 g/mol
+x ===========> 25,000 g/mol >>> 25/55,847 = 0,448 mol
+
+0,448 · 6,022045·10^23 = 2,696·10^23
+
+11. Calcula la longitud que debería tener una línea recta ...
+1 mol de C = N_A de C = 6,022045·10^23
+N_A · 2·10^-10 m = 1,2·10^14 m
+
+12. ¿Cuántas moléculas hay en 1 mL de agua pura?
+1 mL agua = 1 g agua
+nº moléculas = N_A · n/M = 6,022·10^23 · 1g/18,01g = 3,34·10^22
+
+13. Ordena de mayor a menor la masa de:
+a) 0,25 mol de benceno ( C_6 H_6 )
+C_6 -> 12·6 = 72
+H_6 -> 1·6 = 6
+72 + 6 = 78 g ---> 1 mol
+          x   ---> 0,25  ===> 78·0,25 = 19,5 g
+b) 1,21·10^19 átomos de sodio (Na)
+1,21·10^19 · 22,99 = 2,78·10^20 ==> n/M ==> 2,78·10^20 / 6,022·10^23 = 4,619·10^4
+c) 3 L de O_2 medidos en c.n.
+1 mol O_2 = 22,414 L ==> 22,414 · 3 = 67,242 mol
+1 mol O_2 = 16 g ==> 67,242 / 16 = 4,20 g
