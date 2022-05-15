@@ -1,0 +1,23 @@
+#+TITLE: Examen de física EVAU 2016-2017
+#+DESCRIPTION: Resolución del examen
+#+AUTHOR: Marcel Gisbert
+#+STARTUP: showall entitiespretty
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+#+LANGUAGE: es
+#+OPTIONS: date:nil \n:t toc:t
+* Pregunta 1
+** Enunciado
+Titania, satélite del planeta Urano, describe una órbita circular en torno al planeta. Las aceleraciones de la gravedad en la superficie de Urano y de Titania son g_u = 8,69 m s^{-2} y g_t = 0,37 m s^{-2}, respectivamente. Un haz de luz emitido desde la superficie de Urano tarda 1,366 s en llegar a la superficie de Titania. Determine:
+ a) El radio de la órbita de Titania alrededor de Urano (distancia entre los centros de ambos cuerpos).
+ b) El tiempo que tarda Titania en dar una vuelta completa alrededor de Urano, expresado en días terrestres.
+
+/Datos: Constante de Gravitación Universal, G = 6,67·10^11 N m² kg², Velocidad de la luz en el vacío, c = 3·10⁸ m s^-1; Masa de Usano, M_u =8,69·10^25 kg; Masa de Titania M_t = 3,53·10^21 kg./
+
+** Respuesta
+ a)
+#+BEGIN_EXPORT latex
+\begin{equation}
+g_u = G\frac{M}{R}
+\end{equation{
+#+END_EXPORT
