@@ -5,19 +5,39 @@
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [a4paper]
 #+LANGUAGE: es
-#+OPTIONS: date:nil \n:t toc:t
+#+OPTIONS: date:nil \n:t toc:nil
+#+OPTIONS: ^:{}
 * Pregunta 1
 ** Enunciado
-Titania, satélite del planeta Urano, describe una órbita circular en torno al planeta. Las aceleraciones de la gravedad en la superficie de Urano y de Titania son g_u = 8,69 m s^{-2} y g_t = 0,37 m s^{-2}, respectivamente. Un haz de luz emitido desde la superficie de Urano tarda 1,366 s en llegar a la superficie de Titania. Determine:
+Titania, satélite del planeta Urano, describe una órbita circular en torno al planeta. Las aceleraciones de la gravedad en la superficie de Urano y de Titania son g_{u} = 8,69ms^{-2} y g_{t} = 0,37ms^{-2}, respectivamente. Un haz de luz emitido desde la superficie de Urano tarda 1,366s en llegar a la superficie de Titania. Determine:
  a) El radio de la órbita de Titania alrededor de Urano (distancia entre los centros de ambos cuerpos).
  b) El tiempo que tarda Titania en dar una vuelta completa alrededor de Urano, expresado en días terrestres.
 
-/Datos: Constante de Gravitación Universal, G = 6,67·10^11 N m² kg², Velocidad de la luz en el vacío, c = 3·10⁸ m s^-1; Masa de Usano, M_u =8,69·10^25 kg; Masa de Titania M_t = 3,53·10^21 kg./
+/Datos: Constante de Gravitación Universal, G = 6,67·10^{-11} Nm²kg^{-2}, Velocidad de la luz en el vacío, c = 3·10⁸ms^{-1}; Masa de Usano, M_{u} = 8,69·10^{25} kg; Masa de Titania M_{t} = 3,53·10^{21} kg./
 
 ** Respuesta
  a)
 #+BEGIN_EXPORT latex
 \begin{equation}
-g_u = G\frac{M}{R}
-\end{equation{
+g_{u} = G\frac{M}{R} \rightarrow 8,69\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{Nm^{2}}{kg^{2}} \cdot \frac{8,69\cdot10^{25}kg}{R^{2}}
+\end{equation}
+\begin{equation}
+R_{u}=\sqrt{\frac{6,67 \cdot 10^{-11} \frac{ \left( \frac{kg \cdot m}{s^{2}} \right) m^{2}}{kg^{2}} \cdot 8,69\cdot10^{25}kg}{8,69 \frac{m}{s^{2}}}} = \mathbf{2,58 \cdot 10^{7}m}
+\end{equation}
+\begin{equation}
+g_{t} = G\frac{M}{R} \rightarrow 0,37\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{Nm^{2}}{kg^{2}} \cdot \frac{3,53\cdot10^{21}kg}{R^{2}}
+\end{equation}
+\begin{equation}
+R_{t}=\sqrt{\frac{6,67 \cdot 10^{-11} \frac{ \left( \frac{kg \cdot m}{s^{2}} \right) m^{2}}{kg^{2}} \cdot 3,53\cdot10^{21}kg}{0,37 \frac{m}{s^{2}}}} = \mathbf{7,98 \cdot 10^{5}m}
+\end{equation}
+#+END_EXPORT
+
+ b)
+#+BEGIN_EXPORT latex
+\begin{equation}
+c=\frac{h}{t} \rightarrow 3 \cdot 10^{8}\tfrac{m}{s} = \frac{h}{1,366s} \rightarrow h = 3 \cdot 10^{8} \tfrac{m}{s} \cdot 1,366s = 4,098 \cdot 10^{8}m
+\end{equation}
+\begin{equation}
+R_{o} = R_{u} + R_{t} + h = 2,58 \cdot 10^{7}m + 7,98 \cdot 10^{5}m + 4,098 \cdot 10^{8}m = 4,36 \cdot 10^{8}m
+\end{equation}
 #+END_EXPORT
