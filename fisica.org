@@ -30,14 +30,15 @@ g_{t} = G\frac{M}{R} \rightarrow 0,37\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{N
 \begin{equation}
 R_{t}=\sqrt{\frac{6,67 \cdot 10^{-11} \frac{ \left( \frac{kg \cdot m}{s^{2}} \right) m^{2}}{kg^{2}} \cdot 3,53\cdot10^{21}kg}{0,37 \frac{m}{s^{2}}}} = \mathbf{7,98 \cdot 10^{5}m}
 \end{equation}
-#+END_EXPORT
-
- b)
-#+BEGIN_EXPORT latex
 \begin{equation}
 c=\frac{h}{t} \rightarrow 3 \cdot 10^{8}\tfrac{m}{s} = \frac{h}{1,366s} \rightarrow h = 3 \cdot 10^{8} \tfrac{m}{s} \cdot 1,366s = 4,098 \cdot 10^{8}m
 \end{equation}
 \begin{equation}
-R_{o} = R_{u} + R_{t} + h = 2,58 \cdot 10^{7}m + 7,98 \cdot 10^{5}m + 4,098 \cdot 10^{8}m = 4,36 \cdot 10^{8}m
+R_{o} = R_{u} + R_{t} + h = 2,58 \cdot 10^{7}m + 7,98 \cdot 10^{5}m + 4,098 \cdot 10^{8}m = \mathbf{4,36 \cdot 10^{8}m}
 \end{equation}
+#+END_EXPORT
+
+ b)
+#+BEGIN_EXPORT latex
+\omega = \frac{2 \pi r}{t} \rightarrow 
 #+END_EXPORT
