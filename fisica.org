@@ -20,13 +20,13 @@ Titania, satélite del planeta Urano, describe una órbita circular en torno al 
 a)
 #+BEGIN_EXPORT latex
 \begin{equation}
-g_{u} = G\frac{M}{R} \rightarrow 8,69\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{Nm^{2}}{kg^{2}} \cdot \frac{8,69\cdot10^{25}kg}{R^{2}}
+g_{u} = G\frac{M}{R^{2}} \rightarrow 8,69\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{Nm^{2}}{kg^{2}} \cdot \frac{8,69\cdot10^{25}kg}{R^{2}}
 \end{equation}
 \begin{equation}
 R_{u}=\sqrt{\frac{6,67 \cdot 10^{-11} \frac{ \left( \frac{kg \cdot m}{s^{2}} \right) m^{2}}{kg^{2}} \cdot 8,69\cdot10^{25}kg}{8,69 \frac{m}{s^{2}}}} = \mathbf{2,58 \cdot 10^{7}m}
 \end{equation}
 \begin{equation}
-g_{t} = G\frac{M}{R} \rightarrow 0,37\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{Nm^{2}}{kg^{2}} \cdot \frac{3,53\cdot10^{21}kg}{R^{2}}
+g_{t} = G\frac{M}{R^{2}} \rightarrow 0,37\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{Nm^{2}}{kg^{2}} \cdot \frac{3,53\cdot10^{21}kg}{R^{2}}
 \end{equation}
 \begin{equation}
 R_{t}=\sqrt{\frac{6,67 \cdot 10^{-11} \frac{ \left( \frac{kg \cdot m}{s^{2}} \right) m^{2}}{kg^{2}} \cdot 3,53\cdot10^{21}kg}{0,37 \frac{m}{s^{2}}}} = \mathbf{7,98 \cdot 10^{5}m}
@@ -55,5 +55,37 @@ t=\sqrt{\frac{4 \cdot 3,14^{2} \cdot \left(4,436 \cdot 10^{8}\right)^{3}}{6,67 \
 \end{equation}
 \begin{equation}
 \frac{770.680,099 s}{60 \cdot 60 \cdot 24 \tfrac{s}{dia}} = \mathbf{8,92 dias}
+\end{equation}
+#+END_EXPORT
+
+* Opción B
+** Pregunta 1
+*** Enunciado
+Un cierto planeta esférico tiene de masa, el doble de la masa de la Tierra y la longitud de su circunferencia ecuatorial mide la mitad de la de la Tierra. Calcule:
+a) La relación que existe entre la velocidad de escape en la superficie de dicho planeta con respecto a la velocidad de escape en la superficie de la Tierra.
+b) La aceleración de la gravedad en la superficie del planeta.
+/Dato: Aceleración de la gravedad en la superficie de la Tierra, g_{t} = 9,81 m s^{-2}./
+
+*** Respuesta
+a)
+#+BEGIN_EXPORT latex
+\begin{equation}
+F_{c} = F_{G} \rightarrow \frac{mv^{2}}{r} = G \frac{Mm}{r^{2}} \rightarrow v_{T} = \sqrt{\frac{GM_{T}}{r_{T}}}
+\end{equation}
+\begin{equation}
+v_{P} = \sqrt{\frac{G2M_{T}}{\frac{1}{2}r_{T}}}
+\end{equation}
+#+END_EXPORT
+
+b)
+#+BEGIN_EXPORT latex
+\begin{equation}
+g_{T} = G\frac{M_{T}}{R_{T}^{2}} \rightarrow g_{P} = G\frac{2M_{T}}{\frac{1}{2}R_{T}}
+\end{equation}
+\begin{equation}
+\frac{g_{T}}{g_{P}} = \frac{G\frac{M_{T}}{R_{T}^{2}}}{G\frac{2M_{T}}{\frac{1}{2}R_{T}}}
+\end{equation}
+\begin{equation}
+\frac{g_{T}}{g_{P}} = \frac{1}{4} \rightarrow g_{P} = 4 \cdot g_{T} = 4 \cdot 9,81 = \mathbf{39.24 m s^{-2}}
 \end{equation}
 #+END_EXPORT
