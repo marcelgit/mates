@@ -7,16 +7,17 @@
 #+LANGUAGE: es
 #+OPTIONS: date:nil \n:t toc:nil
 #+OPTIONS: ^:{}
-* Pregunta 1
-** Enunciado
+* Opción A
+** Pregunta 1
+*** Enunciado
 Titania, satélite del planeta Urano, describe una órbita circular en torno al planeta. Las aceleraciones de la gravedad en la superficie de Urano y de Titania son g_{u} = 8,69ms^{-2} y g_{t} = 0,37ms^{-2}, respectivamente. Un haz de luz emitido desde la superficie de Urano tarda 1,366s en llegar a la superficie de Titania. Determine:
  a) El radio de la órbita de Titania alrededor de Urano (distancia entre los centros de ambos cuerpos).
  b) El tiempo que tarda Titania en dar una vuelta completa alrededor de Urano, expresado en días terrestres.
 
 /Datos: Constante de Gravitación Universal, G = 6,67·10^{-11} Nm²kg^{-2}, Velocidad de la luz en el vacío, c = 3·10⁸ms^{-1}; Masa de Usano, M_{u} = 8,69·10^{25} kg; Masa de Titania M_{t} = 3,53·10^{21} kg./
 
-** Respuesta
- a)
+*** Respuesta
+a)
 #+BEGIN_EXPORT latex
 \begin{equation}
 g_{u} = G\frac{M}{R} \rightarrow 8,69\tfrac{m}{s} = 6,67 \cdot 10^{-11} \tfrac{Nm^{2}}{kg^{2}} \cdot \frac{8,69\cdot10^{25}kg}{R^{2}}
@@ -38,7 +39,21 @@ R_{o} = R_{u} + R_{t} + h = 2,58 \cdot 10^{7}m + 7,98 \cdot 10^{5}m + 4,098 \cdo
 \end{equation}
 #+END_EXPORT
 
- b)
+b)
 #+BEGIN_EXPORT latex
-\omega = \frac{2 \pi r}{t} \rightarrow 
+\begin{equation}
+v = \frac{s}{t} \rightarrow \omega = \frac{2 \pi r}{t} 
+\end{equation}
+\begin{equation}
+F_{c} = F_{G} \rightarrow \frac{mv^{2}}{r} = G \frac{Mm}{r^{2}} \rightarrow v^{2} = \frac{GM}{r} 
+\end{equation}
+\begin{equation}
+\left(\frac{2 \pi r}{t}\right)^{2} = \frac{GM}{r} \rightarrow 4 \pi ^{2} r^{3} = t^{2} G M \rightarrow t = \sqrt{\frac{4 \pi ^{2} r^{3}}{GM}} 
+\end{equation}
+\begin{equation}
+t=\sqrt{\frac{4 \cdot 3,14^{2} \cdot \left(4,436 \cdot 10^{8}\right)^{3}}{6,67 \cdot 10^{11} \cdot 8,69 \cdot 10^{25}}} = \sqrt{5,939 \cdot 10^{11} s} =770.680,099 s 
+\end{equation}
+\begin{equation}
+\frac{770.680,099 s}{60 \cdot 60 \cdot 24 \tfrac{s}{dia}} = \mathbf{8,92 dias}
+\end{equation}
 #+END_EXPORT
